@@ -1,0 +1,30 @@
+[project]
+name = "dappier-mcp"
+version = "0.1.0"
+description = "An MCP server for interacting with Dappier's RAG models"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
+maintainers = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
+keywords = ["http", "mcp", "llm", "automation"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "dappier>=0.3.3",
+    "mcp>=1.2.1",
+    "pydantic>=2.10.6",
+]
+
+[project.urls]
+homepage = "https://github.com/DappierAI/dappier-mcp"
+repository = "https://github.com/DappierAI/dappier-mcp"
+issues = "https://github.com/DappierAI/dappier-mcp/issues"
+
+[project.scripts]
+mcp-dappier = "mcp_dappier.__main__:main"

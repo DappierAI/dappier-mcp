@@ -27,4 +27,4 @@ repository = "https://github.com/DappierAI/dappier-mcp"
 issues = "https://github.com/DappierAI/dappier-mcp/issues"
 
 [project.scripts]
-mcp-dappier = "mcp_dappier.__main__:main"
+mcp-dappier = "dappier_mcp.__main__:main"

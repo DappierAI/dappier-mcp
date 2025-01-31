@@ -1,6 +1,6 @@
 [project]
 name = "dappier-mcp"
-version = "0.1.3"
+version = "0.1.4"
 description = "An MCP server for interacting with Dappier's RAG models"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -26,3 +26,6 @@ issues = "https://github.com/DappierAI/dappier-mcp/issues"
 
 [project.scripts]
 dappier-mcp = "dappier_mcp.__main__:main"
+
+[tool.uv]
+package = true

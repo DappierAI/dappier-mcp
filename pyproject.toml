@@ -7,7 +7,6 @@ requires-python = ">=3.10"
 authors = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
 maintainers = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
 keywords = ["http", "mcp", "llm", "automation"]
-license = { text = "MIT" }
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

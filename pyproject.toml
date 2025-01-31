@@ -28,6 +28,3 @@ issues = "https://github.com/DappierAI/dappier-mcp/issues"
 
 [project.scripts]
 mcp-dappier = "dappier_mcp.__main__:main"
-
-[tool.setuptools]
-metadata-version = "2.4"

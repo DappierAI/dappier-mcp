@@ -2,10 +2,6 @@
 
 A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to real-time, rights-cleared, proprietary data from trusted sources. Dappier enables your AI to become an expert in anything by providing access to specialized models, including Real-Time Web Search, News, Sports, Financial Stock Market Data, Crypto Data, and exclusive content from premium publishers. Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
-[![smithery badge](https://smithery.ai/badge/dappiermcp)](https://smithery.ai/server/dappiermcp)
-
----
-
 ## Features
 
 - **Real-Time Web Search**: Access real-time Google web search results, including the latest news, weather, stock prices, travel, deals, and more.
@@ -13,8 +9,6 @@ A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to rea
 - **AI-Powered Recommendations**: Personalized content discovery across Sports, Lifestyle News, and niche favorites like I Heart Dogs, I Heart Cats, Green Monster, WishTV, and many more.
 - **Structured JSON Responses**: Rich metadata for articles, including titles, summaries, images, and source URLs.
 - **Flexible Customization**: Choose from predefined data models, similarity filtering, reference domain filtering, and search algorithms.
-
----
 
 ## Tools
 
@@ -35,8 +29,6 @@ A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to rea
   - `ref` (string, optional): The site domain where AI recommendations should be displayed. Defaults to `None`.
   - `num_articles_ref` (integer, optional): The minimum number of articles to return from the specified reference domain (`ref`). Defaults to `0`.
   - `search_algorithm` (string, optional): The search algorithm to use for retrieving articles. Options: `most_recent`, `semantic`, `most_recent_semantic`, `trending`. Defaults to `most_recent`.
-
----
 
 ## Setup Instructions
 
@@ -87,8 +79,6 @@ Configuration file location:
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
----
-
 ## Examples
 
 ### Real-Time Data Search
@@ -101,16 +91,12 @@ Configuration file location:
 - **Query**: "Find trending articles on sustainable living."
 - **Query**: "Get pet care recommendations from IHeartDogs AI."
 
----
-
 ## Debugging
 
 Run the MCP inspector to debug the server:
 ```bash
 npx @modelcontextprotocol/inspector uvx dappier-mcp
 ```
-
----
 
 ## Contributing
 

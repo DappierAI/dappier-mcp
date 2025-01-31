@@ -1,6 +1,6 @@
 [project]
 name = "dappier-mcp"
-version = "0.1.2"
+version = "0.1.3"
 description = "An MCP server for interacting with Dappier's RAG models"
 readme = "README.md"
 requires-python = ">=3.10"

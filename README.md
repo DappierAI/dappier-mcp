@@ -1,34 +1,80 @@
-# Dappier MCP Server  
+# Dappier MCP Server
 
-[![smithery badge](https://smithery.ai/badge/dappier)](https://smithery.ai/server/dappier)
+A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to real-time, rights-cleared, proprietary data from trusted sources. Dappier enables your AI to become an expert in anything by providing access to specialized models, including Real-Time Web Search, News, Sports, Financial Stock Market Data, Crypto Data, and exclusive content from premium publishers. Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
-## Setup Instructions  
+[![smithery badge](https://smithery.ai/badge/dappiermcp)](https://smithery.ai/server/dappiermcp)
 
-### Install `uv` First  
+---
 
-**MacOS/Linux:**  
+## Features
+
+- **Real-Time Web Search**: Access real-time Google web search results, including the latest news, weather, stock prices, travel, deals, and more.
+- **Stock Market Data**: Get real-time financial news, stock prices, and trades from Polygon.io, with AI-powered insights and up-to-the-minute updates.
+- **AI-Powered Recommendations**: Personalized content discovery across Sports, Lifestyle News, and niche favorites like I Heart Dogs, I Heart Cats, Green Monster, WishTV, and many more.
+- **Structured JSON Responses**: Rich metadata for articles, including titles, summaries, images, and source URLs.
+- **Flexible Customization**: Choose from predefined data models, similarity filtering, reference domain filtering, and search algorithms.
+
+---
+
+## Tools
+
+### 1. Real-Time Data Search
+- **Name**: `dappier_real_time_search`
+- **Description**: Retrieves direct answers to real-time queries using AI-powered search. This includes web search results, financial information, news, weather, stock market updates, and more.
+- **Parameters**:
+  - `query` (string, required): The user-provided input string for retrieving real-time data.
+  - `ai_model_id` (string, optional): The AI model ID to use for the query. Defaults to `am_01j06ytn18ejftedz6dyhz2b15` (Real-Time Data).
+
+### 2. AI Recommendations
+- **Name**: `dappier_ai_recommendations`
+- **Description**: Provides AI-powered content recommendations based on structured data models. Returns a list of articles with titles, summaries, images, and source URLs.
+- **Parameters**:
+  - `query` (string, required): The user-provided input string for AI recommendations.
+  - `data_model_id` (string, optional): The data model ID to use for recommendations. Defaults to `dm_01j0pb465keqmatq9k83dthx34` (Sports News).
+  - `similarity_top_k` (integer, optional): The number of top documents to retrieve based on similarity. Defaults to `9`.
+  - `ref` (string, optional): The site domain where AI recommendations should be displayed. Defaults to `None`.
+  - `num_articles_ref` (integer, optional): The minimum number of articles to return from the specified reference domain (`ref`). Defaults to `0`.
+  - `search_algorithm` (string, optional): The search algorithm to use for retrieving articles. Options: `most_recent`, `semantic`, `most_recent_semantic`, `trending`. Defaults to `most_recent`.
+
+---
+
+## Setup Instructions
+
+### 1. Get Dappier API Key
+Head to [Dappier](https://platform.dappier.com/profile/api-keys) to sign up and generate an API key.
+
+### 2. Install Dependencies
+Install `uv` first.
+
+**MacOS/Linux**:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-**Windows:**  
-```powershell
+**Windows**:
+```bash
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
----
+### 3. Install Dappier MCP Server
+```bash
+pip install mcp-dappier
+```
 
-### **Setup with Claude Desktop**  
+Or if you have `uv` installed:
+```bash
+uv pip install mcp-dappier
+```
+
+### 4. Configure Claude Desktop
+Update your Claude configuration file (`claude_desktop_config.json`) with the following content:
 
 ```json
-# claude_desktop_config.json
-# Find location via:
-# Hamburger Menu -> File -> Settings -> Developer -> Edit Config
 {
   "mcpServers": {
     "dappier": {
       "command": "uvx",
-      "args": ["dappier"],
+      "args": ["dappier-mcp"],
       "env": {
         "DAPPIER_API_KEY": "YOUR_API_KEY_HERE"
       }
@@ -37,139 +83,40 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 }
 ```
 
+Configuration file location:
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
 ---
 
-### **Installing via Smithery**  
+## Examples
 
-Alternatively, you can install **Dappier for Claude Desktop** automatically via [Smithery](https://smithery.ai/server/dappier):  
+### Real-Time Data Search
+- **Query**: "How is the weather today in Austin, TX?"
+- **Query**: "What is the latest news for Meta?"
+- **Query**: "What is the stock price for AAPL?"
 
+### AI Recommendations
+- **Query**: "Show me the latest sports news."
+- **Query**: "Find trending articles on sustainable living."
+- **Query**: "Get pet care recommendations from IHeartDogs AI."
+
+---
+
+## Debugging
+
+Run the MCP inspector to debug the server:
 ```bash
-npx -y @smithery/cli install dappier --client claude
+npx @modelcontextprotocol/inspector uvx dappier-mcp
 ```
 
 ---
 
-### **Ask Claude a Question Using Dappier AI**  
+## Contributing
 
-e.g.  
-- `"Find trending articles on AI advancements."`  
-- `"What are the latest stock market trends?"`  
-- `"Show me sports news from the past 24 hours."`  
+We welcome contributions to expand and improve the Dappier MCP Server. Whether you want to add new search capabilities, enhance existing functionality, or improve documentation, your input is valuable.
 
----
+For examples of other MCP servers and implementation patterns, see:
+[https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
-### **Debugging**  
-
-Run:  
-```bash
-npx @modelcontextprotocol/inspector uvx dappier
-```
-
----
-
-## **Local/Dev Setup Instructions**  
-
-### **Clone Repo**  
-```bash
-git clone https://github.com/dappier-ai/dappier-mcp.git
-```
-
-### **Install Dependencies**  
-
-First, install `uv` (if not already installed):  
-
-**MacOS/Linux:**  
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-**Windows:**  
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-Then install MCP server dependencies:  
-
-```bash
-cd dappier-mcp
-
-# Create virtual environment and activate it
-uv venv
-
-source .venv/bin/activate  # MacOS/Linux
-# OR
-.venv/Scripts/activate  # Windows
-
-# Install dependencies
-uv sync
-```
-
----
-
-### **Setup with Claude Desktop**  
-
-#### **Using MCP CLI SDK**  
-```bash
-# If you haven't installed the MCP CLI SDK:
-pip install mcp[cli]
-
-mcp install /ABSOLUTE/PATH/TO/PARENT/FOLDER/dappier-mcp/src/dappier/server.py -v "DAPPIER_API_KEY=API_KEY_HERE"
-```
-
-#### **Manual Setup**  
-
-```json
-# claude_desktop_config.json
-# Find location via:
-# Hamburger Menu -> File -> Settings -> Developer -> Edit Config
-{
-  "mcpServers": {
-    "dappier": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/dappier-mcp",
-        "run",
-        "dappier"
-      ],
-      "env": {
-        "DAPPIER_API_KEY": "YOUR_API_KEY_HERE"
-      }
-    }
-  }
-}
-```
-
----
-
-### **Ask Claude a Question Using Dappier AI**  
-
-e.g.  
-- `"Find trending articles on AI advancements."`  
-- `"What are the latest stock market trends?"`  
-- `"Show me sports news from the past 24 hours."`  
-
----
-
-### **Debugging**  
-
-Run:  
-```bash
-# If MCP CLI installed (`pip install mcp[cli]`)
-mcp dev /ABSOLUTE/PATH/TO/PARENT/FOLDER/dappier-mcp/src/dappier/server.py
-
-# If not
-npx @modelcontextprotocol/inspector \
-      uv \
-      --directory /ABSOLUTE/PATH/TO/PARENT/FOLDER/dappier-mcp \
-      run \
-      dappier
-```
-
-Then access **MCP Inspector** at `http://localhost:5173`.  
-You may need to add your **Dappier API Key** (`DAPPIER_API_KEY`) in the inspector's environment variables.  
-
----
-
-### 🚀 **Dappier is Now Ready!**  
-You're now set up to use **Dappier AI with Claude Desktop** for AI-powered recommendations and real-time search.  
+Pull requests are welcome! Feel free to contribute new ideas, bug fixes, or enhancements.

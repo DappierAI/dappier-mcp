@@ -80,7 +80,7 @@ wheels = [
 
 [[package]]
 name = "dappier-mcp"
-version = "0.1.5"
+version = "0.1.6"
 source = { editable = "." }
 dependencies = [
     { name = "dappier" },
@@ -91,8 +91,8 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "dappier", specifier = ">=0.3.3" },
-    { name = "mcp", specifier = ">=1.2.1" },
-    { name = "pydantic", specifier = ">=2.10.6" },
+    { name = "mcp", specifier = ">=1.0.0" },
+    { name = "pydantic", specifier = ">=2.10.2" },
 ]
 
 [[package]]

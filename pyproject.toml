@@ -1,6 +1,6 @@
 [project]
 name = "dappier-mcp"
-version = "0.1.5"
+version = "0.1.6"
 description = "An MCP server for interacting with Dappier's RAG models"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -15,8 +15,8 @@ classifiers = [
 ]
 dependencies = [
     "dappier>=0.3.3",
-    "mcp>=1.2.1",
-    "pydantic>=2.10.6",
+    "mcp>=1.0.0",
+    "pydantic>=2.10.2",
 ]
 
 [project.urls]

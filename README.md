@@ -50,12 +50,12 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ### 3. Install Dappier MCP Server
 ```bash
-pip install mcp-dappier
+pip install dappier-mcp
 ```
 
 Or if you have `uv` installed:
 ```bash
-uv pip install mcp-dappier
+uv pip install dappier-mcp
 ```
 
 ### 4. Configure Claude Desktop

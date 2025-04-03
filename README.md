@@ -106,7 +106,3 @@ For examples of other MCP servers and implementation patterns, see:
 [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
 Pull requests are welcome! Feel free to contribute new ideas, bug fixes, or enhancements.
-
-<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
-</a>

@@ -1,12 +1,12 @@
 [project]
 name = "dappier-mcp"
-version = "0.2.3"
+version = "0.2.4"
 description = "An MCP server for interacting with Dappier's RAG models"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
 maintainers = [{ name = "Amaan Mohammed", email = "amaan@ai20labs.com" }]
-keywords = ["http", "mcp", "llm", "automation"]
+keywords = ["http", "mcp", "llm"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

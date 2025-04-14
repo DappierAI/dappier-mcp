@@ -1,7 +1,7 @@
 # Dappier MCP Server
 <a href="https://smithery.ai/server/@DappierAI/dappier-mcp"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
-<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
+<!-- <a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" /> -->
 </a>
 
 A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to real-time, rights-cleared, proprietary data from trusted sources. Dappier enables your AI to become an expert in anything by providing access to specialized models, including Real-Time Web Search, News, Sports, Financial Stock Market Data, Crypto Data, and exclusive content from premium publishers. Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).

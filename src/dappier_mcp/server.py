@@ -55,12 +55,12 @@ def dappier_ai_recommendations(
     ],
     data_model_id: Annotated[
         Literal[
-            "dm_01j0pb465keqmatq9k83dthx34",  # Sports News
-            "dm_01j0q82s4bfjmsqkhs3ywm3x6y",  # Lifestyle News
-            "dm_01j1sz8t3qe6v9g8ad102kvmqn",  # iHeartDogs AI
-            "dm_01j1sza0h7ekhaecys2p3y0vmj",  # iHeartCats AI
-            "dm_01j5xy9w5sf49bm6b1prm80m27",  # GreenMonster
-            "dm_01jagy9nqaeer9hxx8z1sk1jx6",  # WISH-TV AI
+            "dm_01j0pb465keqmatq9k83dthx34",
+            "dm_01j0q82s4bfjmsqkhs3ywm3x6y",
+            "dm_01j1sz8t3qe6v9g8ad102kvmqn",
+            "dm_01j1sza0h7ekhaecys2p3y0vmj",
+            "dm_01j5xy9w5sf49bm6b1prm80m27",
+            "dm_01jagy9nqaeer9hxx8z1sk1jx6",
         ],
         Field(
             description=(
@@ -68,9 +68,9 @@ def dappier_ai_recommendations(
                 "Available Data Models:\n"
                 "- dm_01j0pb465keqmatq9k83dthx34: (Sports News) Real-time news, updates, and personalized content "
                 "from top sports sources like Sportsnaut, Forever Blueshirts, Minnesota Sports Fan, LAFB Network, "
-                "Bounding Into Sports, and Ringside Intel.\n"
+                "Bounding Into Sports and Ringside Intel.\n"
                 "- dm_01j0q82s4bfjmsqkhs3ywm3x6y: (Lifestyle News) Real-time updates, analysis, and personalized content "
-                "from top sources like The Mix, Snipdaily, Nerdable, and Familyproof.\n"
+                "from top sources like The Mix, Snipdaily, Nerdable and Familyproof.\n"
                 "- dm_01j1sz8t3qe6v9g8ad102kvmqn: (iHeartDogs AI) A dog care expert with access to thousands of articles "
                 "on health, behavior, lifestyle, grooming, ownership, and more from the industry-leading pet community "
                 "iHeartDogs.com.\n"

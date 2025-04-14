@@ -1,4 +1,8 @@
 # Dappier MCP Server
+<a href="https://smithery.ai/server/@DappierAI/dappier-mcp"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
+<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
+</a>
 
 A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to real-time, rights-cleared, proprietary data from trusted sources. Dappier enables your AI to become an expert in anything by providing access to specialized models, including Real-Time Web Search, News, Sports, Financial Stock Market Data, Crypto Data, and exclusive content from premium publishers. Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
@@ -31,6 +35,14 @@ A Model Context Protocol (MCP) server that connects any LLM or Agentic AI to rea
   - `search_algorithm` (string, optional): The search algorithm to use for retrieving articles. Options: `most_recent`, `semantic`, `most_recent_semantic`, `trending`. Defaults to `most_recent`.
 
 ## Setup Instructions
+
+### Installing via Smithery
+
+To install dappier-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@DappierAI/dappier-mcp):
+
+```bash
+npx -y @smithery/cli install @DappierAI/dappier-mcp --client claude
+```
 
 ### 1. Get Dappier API Key
 Head to [Dappier](https://platform.dappier.com/profile/api-keys) to sign up and generate an API key.
@@ -106,7 +118,3 @@ For examples of other MCP servers and implementation patterns, see:
 [https://github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 
 Pull requests are welcome! Feel free to contribute new ideas, bug fixes, or enhancements.
-
-<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
-</a>

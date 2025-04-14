@@ -1,0 +1,25 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - dappierApiKey
+    properties:
+      dappierApiKey:
+        type: string
+        description: Your Dappier API key.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'uvx',
+      args: ['dappier-mcp'],
+      env: {
+        DAPPIER_API_KEY: config.dappierApiKey
+      }
+    })
+  exampleConfig:
+    dappierApiKey: YOUR_API_KEY_HERE

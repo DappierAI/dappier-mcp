@@ -4,6 +4,7 @@ import os
 from pydantic import Field
 from mcp.server.fastmcp import FastMCP
 from dappier import Dappier
+from dappier.types import AIRecommendationsResponse
 
 mcp = FastMCP("dappier-mcp")
 api_key = os.getenv("DAPPIER_API_KEY")
@@ -42,7 +43,7 @@ def dappier_real_time_search(
     """
     try:
         response = client.search_real_time_data(query=query, ai_model_id=ai_model_id)
-        return format_results(response)
+        return response.message
     except Exception as e:
         return f"Error: {str(e)}"
 
@@ -137,35 +138,30 @@ def dappier_ai_recommendations(
     except Exception as e:
         return f"Error: {str(e)}"
 
-def format_results(response: Dict[str, Any]) -> str:
+def format_results(response: AIRecommendationsResponse) -> str:
     """
     Helper function to format the API response into a human-readable string.
     """
-    message = response.get("message")
-    if isinstance(message, str) and message:
-        return message
-
-    if response.get("status") != "success":
+    if response.status != "success":
         return "The API response was not successful."
 
-    query = response["response"].get("query", "No query provided")
-    results = response["response"].get("results", [])
+    query = response.result.query or "No query provided"
+    results = response.result.results or []
 
     formatted_text = f"Search Query: {query}\n\n"
     for idx, result in enumerate(results, start=1):
         formatted_text += (
             f"Result {idx}:\n"
-            f"Title: {result.get('title', 'No title')}\n"
-            f"Author: {result.get('author', 'Unknown author')}\n"
-            f"Published on: {result.get('pubdate', 'No date available')}\n"
-            f"Source: {result.get('site', 'Unknown site')} ({result.get('site_domain', 'No domain')})\n"
-            f"URL: {result.get('source_url', 'No URL available')}\n"
-            f"Image URL: {result.get('image_url', 'No URL available')}\n"
-            f"Summary: {result.get('summary', 'No summary available')}\n"
-            f"Score: {result.get('score', 'No score available')}\n\n"
+            f"Title: {result.title or 'No title'}\n"
+            f"Author: {result.author or 'Unknown author'}\n"
+            f"Published on: {result.pubdate or 'No date available'}\n"
+            f"Source: {result.site or 'Unknown site'} ({result.site_domain or 'No domain'})\n"
+            f"URL: {result.source_url or 'No URL available'}\n"
+            f"Image URL: {result.image_url or 'No URL available'}\n"
+            f"Summary: {result.summary or 'No summary available'}\n"
+            f"Score: {result.score or 'No score available'}\n\n"
         )
     return formatted_text
-
 
 def main():
     """

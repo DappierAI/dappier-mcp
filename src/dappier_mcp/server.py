@@ -144,7 +144,7 @@ def format_results(response: AIRecommendationsResponse) -> str:
     """
     if response.status != "success":
         return "The API response was not successful."
-    
+
     query = response.response.query or "No query provided"
     results = response.response.results or []
 

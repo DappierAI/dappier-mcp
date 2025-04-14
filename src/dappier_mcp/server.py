@@ -168,7 +168,7 @@ def main():
     Entry point for the Dappier MCP server.
     
     This function initializes the FastMCP server and starts it, so that the server can begin
-    processing incoming tool and prompt requests.
+    processing incoming tool requests.
     """
     try:
         mcp.run()

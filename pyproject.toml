@@ -24,8 +24,12 @@ homepage = "https://github.com/DappierAI/dappier-mcp"
 repository = "https://github.com/DappierAI/dappier-mcp"
 issues = "https://github.com/DappierAI/dappier-mcp/issues"
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project.scripts]
-dappier-mcp = "dappier_mcp.__main__:main"
+dappier-mcp = "dappier_mcp:main"
 
 [tool.uv]
 package = true

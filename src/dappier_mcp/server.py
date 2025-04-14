@@ -5,7 +5,6 @@ from pydantic import Field
 from mcp.server.fastmcp import FastMCP
 from dappier import Dappier
 
-# Initialize the FastMCP server instance and create the Dappier client.
 mcp = FastMCP("dappier-mcp")
 api_key = os.getenv("DAPPIER_API_KEY")
 if not api_key:
@@ -181,7 +180,6 @@ def main():
         print(f"Error starting MCP server: {str(e)}")
 
 if __name__ == "__main__":
-    # Ensure that the DAPPIER_API_KEY environment variable is set before starting the server.
     if not os.getenv("DAPPIER_API_KEY"):
         raise ValueError("DAPPIER_API_KEY environment variable is required")
     

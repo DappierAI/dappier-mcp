@@ -2,10 +2,10 @@
 
 Enable fast, free real-time web search and access premium data from trusted media brands—news, financial markets, sports, entertainment, weather, and more. Build powerful AI agents with Dappier.
 
-<a href="https://smithery.ai/server/@DappierAI/dappier-mcp"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
+<a href="https://smithery.ai/server/@DappierAI/dappier-mcp" target="_blank"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
 
 
-<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
+<a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp" target="_blank">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
 </a>
 
@@ -16,7 +16,9 @@ Enable fast, free real-time web search and access premium data from trusted medi
 
 ## Video Walkthrough
 
-[![Watch the setup walkthrough](https://img.youtube.com/vi/JyfexpTmPbg/maxresdefault.jpg)](https://youtu.be/JyfexpTmPbg)
+<a href="https://youtu.be/JyfexpTmPbg" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/JyfexpTmPbg/maxresdefault.jpg" alt="Watch the setup walkthrough">
+</a>
 
 > **Click the image to watch** the full video guide on setting up Dappier MCP with Claude Desktop.
 

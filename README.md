@@ -42,9 +42,12 @@ Enable fast, free real-time web search and access premium data from trusted medi
   - `num_articles_ref` (integer, optional): The minimum number of articles to return from the specified reference domain (`ref`). Defaults to `0`.
   - `search_algorithm` (string, optional): The search algorithm to use for retrieving articles. Options: `most_recent`, `semantic`, `most_recent_semantic`, `trending`. Defaults to `most_recent`.
 
-## Setup Instructions
+## Getting Started
 
-### Installing via Smithery
+Get Dappier API Key. Head to [Dappier](https://platform.dappier.com/profile/api-keys) to sign up and generate an API key.
+
+
+## Installing via Smithery
 
 To install dappier-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@DappierAI/dappier-mcp):
 
@@ -52,10 +55,8 @@ To install dappier-mcp for Claude Desktop automatically via [Smithery](https://s
 npx -y @smithery/cli install @DappierAI/dappier-mcp --client claude
 ```
 
-### 1. Get Dappier API Key
-Head to [Dappier](https://platform.dappier.com/profile/api-keys) to sign up and generate an API key.
+## Installation
 
-### 2. Install Dependencies
 Install `uv` first.
 
 **MacOS/Linux**:
@@ -68,17 +69,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-### 3. Install Dappier MCP Server
-```bash
-pip install dappier-mcp
-```
+## Usage
 
-Or if you have `uv` installed:
-```bash
-uv pip install dappier-mcp
-```
+## Claude Desktop
 
-### 4. Configure Claude Desktop
 Update your Claude configuration file (`claude_desktop_config.json`) with the following content:
 
 ```json
@@ -95,9 +89,60 @@ Update your Claude configuration file (`claude_desktop_config.json`) with the fo
 }
 ```
 
+> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uv on MacOS/Linux or where uv on Windows.
+
 Configuration file location:
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+## Cursor
+
+Update your Cursor configuration file (`mcp.json`) with the following content:
+
+```json
+{
+  "mcpServers": {
+    "dappier": {
+      "command": "uvx",
+      "args": ["dappier-mcp"],
+      "env": {
+        "DAPPIER_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uvx on MacOS/Linux or where uvx on Windows.
+
+Configuration file location:
+- **macOS**: `~/.cursor/mcp.json`
+- **Windows**: `%USERPROFILE%\.cursor\mcp.json`
+
+## Windsurf
+
+Update your Windsurf configuration file (`mcp_config.json`) with the following content:
+
+```json
+{
+  "mcpServers": {
+    "dappier": {
+      "command": "uvx",
+      "args": ["dappier-mcp"],
+      "env": {
+        "DAPPIER_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+
+> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uvx on MacOS/Linux or where uvx on Windows.
+
+Configuration file location:
+- **macOS**: `~/.codeium/windsurf/mcp_config.json`
+- **Windows**: `%USERPROFILE%\.codeium\windsurf\mcp_config.json`
+
 
 ## Examples
 

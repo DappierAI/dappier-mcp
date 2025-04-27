@@ -2,8 +2,6 @@
 
 Enable fast, free real-time web search and access premium data from trusted media brands—news, financial markets, sports, entertainment, weather, and more. Build powerful AI agents with Dappier.
 
-<br>
-
 <a href="https://smithery.ai/server/@DappierAI/dappier-mcp"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
 
 

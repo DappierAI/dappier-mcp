@@ -69,9 +69,13 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
+Certainly! Here's the updated markdown with instructions on how to access and edit the configuration files for Claude Desktop, Cursor, and Windsurf via their respective applications:
+
+---
+
 ## Usage
 
-## Claude Desktop
+### Claude Desktop
 
 Update your Claude configuration file (`claude_desktop_config.json`) with the following content:
 
@@ -89,13 +93,29 @@ Update your Claude configuration file (`claude_desktop_config.json`) with the fo
 }
 ```
 
-> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uv on MacOS/Linux or where uv on Windows.
+> **Hint**: You may need to provide the full path to the `uvx` executable in the `command` field. You can obtain this by running `which uvx` on macOS/Linux or `where uvx` on Windows.
 
-Configuration file location:
+**Configuration file location:**
 - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
-## Cursor
+**Accessing via application:**
+- **macOS**:
+  1. Open the Claude Desktop application.
+  2. In the menu bar, click on `Claude` > `Settings`.
+  3. Navigate to the `Developer` tab.
+  4. Click on `Edit Config` to open the configuration file in your default text editor.
+- **Windows**:
+  1. Open the Claude Desktop application.
+  2. Click on the gear icon to access `Settings`.
+  3. Navigate to the `Developer` tab.
+  4. Click on `Edit Config` to open the configuration file in your default text editor.
+
+> **Note**: If the `Developer` tab is not visible, ensure you're using the latest version of Claude Desktop. 
+
+---
+
+### Cursor
 
 Update your Cursor configuration file (`mcp.json`) with the following content:
 
@@ -113,13 +133,26 @@ Update your Cursor configuration file (`mcp.json`) with the following content:
 }
 ```
 
-> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uvx on MacOS/Linux or where uvx on Windows.
+> **Hint**: You may need to provide the full path to the `uvx` executable in the `command` field. You can obtain this by running `which uvx` on macOS/Linux or `where uvx` on Windows.
 
-Configuration file location:
-- **macOS**: `~/.cursor/mcp.json`
-- **Windows**: `%USERPROFILE%\.cursor\mcp.json`
+**Configuration file location:**
+- **Global Configuration**:
+  - **macOS**: `~/.cursor/mcp.json`
+  - **Windows**: `%USERPROFILE%\.cursor\mcp.json`
+- **Project-Specific Configuration**:
+  - Place the `mcp.json` file inside the `.cursor` directory within your project folder: `<project-root>/.cursor/mcp.json`
 
-## Windsurf
+**Accessing via application:**
+1. Open the Cursor application.
+2. Navigate to `Settings` > `MCP`.
+3. Click on `Add New Global MCP Server`.
+4. The application will open the `mcp.json` file in your default text editor for editing.
+
+> **Note**: On Windows, if the project-level configuration is not recognized, consider adding the MCP server through the Cursor settings interface. 
+
+---
+
+### Windsurf
 
 Update your Windsurf configuration file (`mcp_config.json`) with the following content:
 
@@ -137,11 +170,19 @@ Update your Windsurf configuration file (`mcp_config.json`) with the following c
 }
 ```
 
-> **Hint**: You may need to put the full path to the uv executable in the command field. You can get this by running which uvx on MacOS/Linux or where uvx on Windows.
+> **Hint**: You may need to provide the full path to the `uvx` executable in the `command` field. You can obtain this by running `which uvx` on macOS/Linux or `where uvx` on Windows.
 
-Configuration file location:
+**Configuration file location:**
 - **macOS**: `~/.codeium/windsurf/mcp_config.json`
 - **Windows**: `%USERPROFILE%\.codeium\windsurf\mcp_config.json`
+
+**Accessing via application:**
+1. Open the Windsurf application.
+2. Navigate to `Settings` > `Cascade`.
+3. Scroll down to the `Model Context Protocol (MCP) Servers` section.
+4. Click on `View raw config` to open the `mcp_config.json` file in your default text editor.
+
+> **Note**: After editing the configuration file, click the `Refresh` button in the MCP Servers section to apply the changes. 
 
 
 ## Examples

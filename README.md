@@ -14,33 +14,11 @@ Enable fast, free real-time web search and access premium data from trusted medi
 
 > Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
-## Features
+## Video Walkthrough
 
-- **Real-Time Web Search**: Access real-time Google web search results, including the latest news, weather, stock prices, travel, deals, and more.
-- **Stock Market Data**: Get real-time financial news, stock prices, and trades from Polygon.io, with AI-powered insights and up-to-the-minute updates.
-- **AI-Powered Recommendations**: Personalized content discovery across Sports, Lifestyle News, and niche favorites like I Heart Dogs, I Heart Cats, Green Monster, WishTV, and many more.
-- **Structured JSON Responses**: Rich metadata for articles, including titles, summaries, images, and source URLs.
-- **Flexible Customization**: Choose from predefined data models, similarity filtering, reference domain filtering, and search algorithms.
+[![Watch the setup walkthrough](https://img.youtube.com/vi/JyfexpTmPbg/maxresdefault.jpg)](https://youtu.be/JyfexpTmPbg)
 
-## Tools
-
-### 1. Real-Time Data Search
-- **Name**: `dappier_real_time_search`
-- **Description**: Retrieves direct answers to real-time queries using AI-powered search. This includes web search results, financial information, news, weather, stock market updates, and more.
-- **Parameters**:
-  - `query` (string, required): The user-provided input string for retrieving real-time data.
-  - `ai_model_id` (string, optional): The AI model ID to use for the query. Defaults to `am_01j06ytn18ejftedz6dyhz2b15` (Real-Time Data).
-
-### 2. AI Recommendations
-- **Name**: `dappier_ai_recommendations`
-- **Description**: Provides AI-powered content recommendations based on structured data models. Returns a list of articles with titles, summaries, images, and source URLs.
-- **Parameters**:
-  - `query` (string, required): The user-provided input string for AI recommendations.
-  - `data_model_id` (string, optional): The data model ID to use for recommendations. Defaults to `dm_01j0pb465keqmatq9k83dthx34` (Sports News).
-  - `similarity_top_k` (integer, optional): The number of top documents to retrieve based on similarity. Defaults to `9`.
-  - `ref` (string, optional): The site domain where AI recommendations should be displayed. Defaults to `None`.
-  - `num_articles_ref` (integer, optional): The minimum number of articles to return from the specified reference domain (`ref`). Defaults to `0`.
-  - `search_algorithm` (string, optional): The search algorithm to use for retrieving articles. Options: `most_recent`, `semantic`, `most_recent_semantic`, `trending`. Defaults to `most_recent`.
+> **Click the image to watch** the full video guide on setting up Dappier MCP with Claude Desktop.
 
 ## Getting Started
 
@@ -68,10 +46,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
-
-Certainly! Here's the updated markdown with instructions on how to access and edit the configuration files for Claude Desktop, Cursor, and Windsurf via their respective applications:
-
----
 
 ## Usage
 
@@ -184,18 +158,77 @@ Update your Windsurf configuration file (`mcp_config.json`) with the following c
 
 > **Note**: After editing the configuration file, click the `Refresh` button in the MCP Servers section to apply the changes. 
 
+## Features
 
-## Examples
+The Dappier MCP Remote Server provides powerful real-time capabilities out of the box — no training or fine-tuning needed. Use it to build live, interactive tools powered by the latest web data, financial markets, or AI-curated content.
 
-### Real-Time Data Search
-- **Query**: "How is the weather today in Austin, TX?"
-- **Query**: "What is the latest news for Meta?"
-- **Query**: "What is the stock price for AAPL?"
+### Real-Time Web Search  
+**Model ID:** `am_01j06ytn18ejftedz6dyhz2b15`  
 
-### AI Recommendations
-- **Query**: "Show me the latest sports news."
-- **Query**: "Find trending articles on sustainable living."
-- **Query**: "Get pet care recommendations from IHeartDogs AI."
+Search the live web using Dappier’s AI-powered index. Get real-time access to:
+
+- Breaking news from across the globe  
+- Weather forecasts and local updates  
+- Travel alerts and flight info  
+- Trending topics and viral content  
+- Online deals and shopping highlights  
+
+Ideal for use cases like news agents, travel planners, alert bots, and more.
+
+### Stock Market Insights  
+**Model ID:** `am_01j749h8pbf7ns8r1bq9s2evrh`  
+
+This model delivers instant access to market data, financial headlines, and trade insights. Perfect for portfolio dashboards, trading copilots, and investment tools.
+
+It provides:
+
+- Real-time stock prices  
+- Financial news and company updates  
+- Trade signals and trends  
+- Market movement summaries  
+- AI-curated analysis using live data from Polygon.io  
+
+### AI-Powered Content Recommendations  
+
+Choose from several domain-specific AI models tailored for content discovery, summarization, and feed generation.
+
+#### Sports News  
+**Model ID:** `dm_01j0pb465keqmatq9k83dthx34`  
+Stay updated with real-time sports headlines, game recaps, and expert analysis.
+
+#### Lifestyle Updates  
+**Model ID:** `dm_01j0q82s4bfjmsqkhs3ywm3x6y`  
+Explore curated lifestyle content — covering wellness, entertainment, and everyday inspiration.
+
+#### iHeartDogs AI  
+**Model ID:** `dm_01j1sz8t3qe6v9g8ad102kvmqn`  
+Your intelligent dog care assistant — access training tips, health advice, and behavior insights.
+
+#### iHeartCats AI  
+**Model ID:** `dm_01j1sza0h7ekhaecys2p3y0vmj`  
+An expert AI for all things feline — from nutrition to playtime to grooming routines.
+
+#### GreenMonster  
+**Model ID:** `dm_01j5xy9w5sf49bm6b1prm80m27`  
+Discover sustainable lifestyle ideas, ethical choices, and green innovations.
+
+#### WISH-TV AI  
+**Model ID:** `dm_01jagy9nqaeer9hxx8z1sk1jx6`  
+Tap into hyperlocal news, politics, culture, health, and multicultural updates.
+
+Each recommendation includes:
+
+- A clear title and concise summary  
+- The original publication date  
+- The trusted source and domain  
+- Image preview (if available)  
+- A relevance score for prioritization
+
+Advanced options let you:
+
+- Tune the search algorithm (`semantic`, `most_recent`, `trending`, etc.)  
+- Focus results on a specific domain (`ref`)  
+- Adjust how many results you want (`similarity_top_k`, `num_articles_ref`)  
 
 ## Debugging
 

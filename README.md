@@ -2,8 +2,6 @@
 
 Enable fast, free real-time web search and access premium data from trusted media brands—news, financial markets, sports, entertainment, weather, and more. Build powerful AI agents with Dappier.
 
-> Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
-
 <br>
 
 <a href="https://smithery.ai/server/@DappierAI/dappier-mcp"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
@@ -12,6 +10,10 @@ Enable fast, free real-time web search and access premium data from trusted medi
 <a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
 </a>
+
+<br>
+
+> Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
 ## Features
 

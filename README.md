@@ -12,6 +12,8 @@ Enable fast, free real-time web search and access premium data from trusted medi
 </a>
 
 <br>
+<br>
+<br>
 
 > Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 

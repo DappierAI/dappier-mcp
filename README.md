@@ -1,7 +1,10 @@
-<a href="https://youtu.be/2Q_PwLFkYTQ?si=7QF5bJee76TvOdHJ" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.youtube.com/vi/2Q_PwLFkYTQ/maxresdefault.jpg" alt="Watch the demo video">
-</a>
+## 📽️ Watch the Demo Video (Live!)
 
+> 📌 Click the image below — use **Ctrl+Click** (or **Cmd+Click on Mac**) to open in a new tab.
+
+<a href="https://youtu.be/2Q_PwLFkYTQ">
+  <img src="https://i9.ytimg.com/vi/2Q_PwLFkYTQ/sddefault.jpg?v=685e5a3d&sqp=CIy0-cIG&rs=AOn4CLAWY2I5qfS3BbWByURKQeIaSZAYDg" alt="Watch the demo video">
+</a>
 
 # Dappier MCP Server
 
@@ -9,16 +12,20 @@ Enable fast, free real-time web search and access premium data from trusted medi
 
 > Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
+<br>
+
 <a href="https://smithery.ai/server/@DappierAI/dappier-mcp" target="_blank"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
 
+<br>
 
 <a href="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp" target="_blank">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
 </a>
 
+<br>
+
 [![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dappierai-dappier-mcp-badge.png)](https://mseep.ai/app/dappierai-dappier-mcp)
 
-<br>
 <br>
 
 ## Getting Started

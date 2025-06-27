@@ -1,8 +1,13 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dappierai-dappier-mcp-badge.png)](https://mseep.ai/app/dappierai-dappier-mcp)
+<a href="https://youtu.be/2Q_PwLFkYTQ?si=7QF5bJee76TvOdHJ" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/2Q_PwLFkYTQ/maxresdefault.jpg" alt="Watch the demo video">
+</a>
+
 
 # Dappier MCP Server
 
 Enable fast, free real-time web search and access premium data from trusted media brands—news, financial markets, sports, entertainment, weather, and more. Build powerful AI agents with Dappier.
+
+> Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
 
 <a href="https://smithery.ai/server/@DappierAI/dappier-mcp" target="_blank"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
 
@@ -11,18 +16,10 @@ Enable fast, free real-time web search and access premium data from trusted medi
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@DappierAI/dappier-mcp/badge" />
 </a>
 
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dappierai-dappier-mcp-badge.png)](https://mseep.ai/app/dappierai-dappier-mcp)
+
 <br>
 <br>
-
-> Explore a wide range of data models in our marketplace at [marketplace.dappier.com](https://marketplace.dappier.com/marketplace).
-
-## Video Walkthrough
-
-<a href="https://youtu.be/JyfexpTmPbg" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.youtube.com/vi/JyfexpTmPbg/maxresdefault.jpg" alt="Watch the setup walkthrough">
-</a>
-
-> **Click the image to watch** the full video guide on setting up Dappier MCP with Claude Desktop.
 
 ## Getting Started
 

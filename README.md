@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/dappierai-dappier-mcp-badge.png)](https://mseep.ai/app/dappierai-dappier-mcp)
+
 # Dappier MCP Server
 
 Enable fast, free real-time web search and access premium data from trusted media brands—news, financial markets, sports, entertainment, weather, and more. Build powerful AI agents with Dappier.

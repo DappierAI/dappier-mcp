@@ -28,6 +28,10 @@ Enable fast, free real-time web search and access premium data from trusted medi
 
 <br>
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/dappierai-dappier-mcp).
+
 ## Getting Started
 
 Get Dappier API Key. Head to [Dappier](https://platform.dappier.com/profile/api-keys) to sign up and generate an API key.

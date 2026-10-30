@@ -14,7 +14,7 @@ Enable fast, free real-time web search and access premium data from trusted medi
 
 <br>
 
-<a href="https://smithery.ai/server/@DappierAI/dappier-mcp" target="_blank"><img alt="Smithery Badge" src="https://smithery.ai/badge/@DappierAI/dappier-mcp"></a>
+<a href="https://lightnow.ai/servers/io.github.dappierai/dappier-mcp"><img alt="LightNow" src="https://lightnow.ai/badge/io.github.dappierai/dappier-mcp"></a>
 
 <br>
 

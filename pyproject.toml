@@ -15,7 +15,7 @@ classifiers = [
 ]
 dependencies = [
     "dappier>=0.3.3",
-    "mcp[cli]>=1.2.1",
+    "mcp[cli]>=1.2.1,<2",
     "pydantic>=2.10.2",
 ]
 
